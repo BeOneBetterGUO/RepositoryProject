@@ -11,7 +11,7 @@ class ProductList{
         ON_GREATER = 0x03,
     };
     private:
-    Product* products;
+    Product* product;
     ProductList* productNext;
     private:
     static ProductList* head;
@@ -29,7 +29,7 @@ class ProductList{
     int compareByType(Type type, const Product* p1, const Product* p2);
     ProductList* isSameProduct(const Product* p) const;
     ProductList* getFrontProduct(const ProductList* p);
-    ProductList* isProductExist(const Product* p, int num);
+    ProductList* isProductExist(const ProductList* p, int num);
     public:
     void addProduct(const Product* p = nullptr);
     void insertProduct(const ProductList* product, int num = SELECT_FIRST);
