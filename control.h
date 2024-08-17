@@ -1,9 +1,9 @@
 class Control{
     private:
-    Manager manager;
-    std::string choice;
+    Manager manager;//Manager object
+    std::string choice;//choice of user
     public:
     Control();
     ~Control();
-    void mainControl();
+    void mainControl();//system functions enterance
 };
